@@ -1,0 +1,146 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        max-width:calc(66% - 6rem);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        max-width: calc(83% - 6rem);
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero-section {
+        max-height: 512px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section {
+        max-height: 480px;
+    }
+}
+
+@media screen {
+    header {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: inherit;
+    margin: auto;
+}
+
+.logo {
+    height: 2.5rem;
+    fill: rgb(229,9,20);
+}
+
+.header-right-section {
+    display: flex;
+}
+
+.language-selection {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 132px;
+    min-width: 64px;
+    min-height: 32px;
+    background: rgba(22,22,22,0.7);
+    border-color: rgba(128,128,128,0.7);
+    z-index: 1;
+}
+.language-selection svg {
+    position: absolute;
+    z-index: -1;
+    fill: rgb(255, 255, 255);
+}
+.language-selection svg:first-of-type {
+    margin-left: 10px;
+}
+.language-selection svg:last-of-type {
+    margin-left: 100px;
+}
+
+select {
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    background: rgba(22,22,22,0);
+    border-color: rgba(128,128,128,0.7);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.25rem;
+    width: 132px;
+    height: 32px;
+}
+
+select:focus {
+    background: rgba(22,22,22,0.7);
+    border-color: rgba(128,128,128,0.7);
+}
+
+option {
+    width: 132px;
+}
+
+.divider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35,35,35);
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-position-x: 40%;
+    background-position-y: 65%;
+}
