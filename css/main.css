@@ -7,8 +7,7 @@ body * {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+    font-family: sans-serif;
 }
 
 @media screen and (min-width: 1920px) {
@@ -303,7 +302,7 @@ option {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4.5rem;
+    gap: 1rem;
     padding: 4.5rem 4.5rem;
     position: relative;
     color: #FFF;
@@ -324,6 +323,12 @@ option {
     position: relative;
 }
 
+.content-section > .text, .content-section .image {
+    flex-basis: 100%;
+    max-width: 40%;
+
+}
+
 .content-section > .image > img {
     position: relative;
     width: 100%;
@@ -332,10 +337,40 @@ option {
 
 .content-section > .image > video {
     overflow: hidden;
-    max-width: 73%;
     position: absolute;
-    top: 20.7%;
-    left: 13.15%;
+}
+
+.on-top {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    background: #000;
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border: 2px solid rgba(128,128,128,0.7);
+    border-radius: 0.75rem;
+    min-width: 15rem;
+    top: 67%;
+    left: 22%;
+    z-index: 1;
+    padding: 0.6rem;
+    width: 55%;
+}
+
+.on-top img {
+    width: 22%;
+}
+
+.on-top p:first-of-type {
+    font-size: 0.99rem;
+    margin: 0;
+}
+
+.on-top p:last-of-type {
+    font-size: 0.8rem;
+    color: #0071eb;
+    margin: 0;
 }
 
 .faq-section {
