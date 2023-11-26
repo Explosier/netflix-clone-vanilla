@@ -372,6 +372,47 @@ h2 {
     margin: 0;
 }
 
+.faq-content {
+    font-size: 1.5rem;
+    width: 85%;
+}
+
+.faq-content ul {
+    list-style: none;
+}
+
+.faq-content li {
+    margin: 0 0 0.5rem 0;
+    user-select: none;
+}
+
+.faq-content li > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45,45,45);
+    margin-bottom: 0.0625rem;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.faq-content li > div:first-of-type > h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.faq-content li > div:last-of-type {
+    overflow: hidden;
+    background-color: rgb(45,45,45);
+    max-height: 0;
+    padding: 0 1.5rem;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+
+.faq-content li > div:last-of-type.active {
+    max-height: 75rem;
+    padding: 1.5rem;
+}
+
 .faq-section, footer {
     flex-direction: column;
 }
